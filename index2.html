@@ -21,7 +21,8 @@
       let [counter, setCounter] = data;
 
       const countUp = () => {
-        setCounter(counter + 1);
+        // setCounter(counter + 1);
+        setCounter((current) => current + 1); // 위에 보다 현재코드가 더 안전 => 현재값이란걸 보장하기 때문
       };
       return (
         <div>
